@@ -1,3 +1,3 @@
 ## 说明
 
-- [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
+- [Lean大源码的OpenWrt](https://github.com/coolsnowwolf/lede)
