@@ -51,7 +51,7 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
         
-    - name: 安装并更新资源
+    - name: 安装并更新feeds
       working-directory: ./openwrt
       run: |
         ./scripts/feeds update -a
