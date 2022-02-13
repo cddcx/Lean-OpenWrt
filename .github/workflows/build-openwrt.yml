@@ -1,4 +1,4 @@
-name: openwrt-21.02
+name: openwrt
 
 on:
   repository_dispatch:
