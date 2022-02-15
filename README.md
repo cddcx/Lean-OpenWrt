@@ -1,10 +1,6 @@
 # 说明
 - [Lean大源码的OpenWrt](https://github.com/coolsnowwolf/lede)
 
-# 说明
-- [OpenWrt的分支 天灵](https://github.com/immortalwrt/immortalwrt)
-
-
 ## 其他：
 ````
 - 支持ipv6：
