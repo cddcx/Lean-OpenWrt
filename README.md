@@ -1,5 +1,5 @@
 # 说明
-- [Lean大源码的OpenWrt](https://github.com/coolsnowwolf/lede)
+- 利用Actions编译[Lean大源码的OpenWrt](https://github.com/coolsnowwolf/lede)
 
 ## 其他：
 ````
