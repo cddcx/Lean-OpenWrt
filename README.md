@@ -1,7 +1,7 @@
 # 说明
 - [Lean大源码的OpenWrt](https://github.com/coolsnowwolf/lede)
 
-## 其他：
+### 其他：
 ````
 - 支持ipv6：
 
