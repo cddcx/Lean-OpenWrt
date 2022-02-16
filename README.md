@@ -9,4 +9,4 @@
 - # 鸣谢
 > [`Lean`](https://github.com/coolsnowwolf/lede)
 > [`P3TERX`](https://github.com/P3TERX/Actions-OpenWrt)
-> [`感谢各位大佬提供的各种各样的插件`](#/README.md)
+> [`感谢各位大佬的插件`](#/README.md)
