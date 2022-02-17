@@ -20,4 +20,5 @@ rm -rf package/lean/luci-theme-argon
 #sed -i "5i uci set network.wan.password='19701115'" package/default-settings/files/zzz-default-settings
 #sed -i "6i uci set network.wan.ifname='eth1'" package/default-settings/files/zzz-default-settings
 #sed -i "7i uci set network.wan6.ifname='eth1'" package/default-settings/files/zzz-default-settings
-#sed -i '8i uci commit network' package/default-settings/files/zzz-default-settings
+#set -i "8i uci network.lan.delegate='0'" package/default-settings/files/zzz-default-settings    # 去掉LAN口使用内置的 IPv6 管理
+#sed -i '9i uci commit network' package/default-settings/files/zzz-default-settings
