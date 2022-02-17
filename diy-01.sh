@@ -13,9 +13,12 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add a feed source
+# 添加源
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr' >>feeds.conf.default
+#vssr依赖
+echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr' >>feeds.conf.default
 
 # 修改内核为5.4
 sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile
@@ -33,5 +36,5 @@ sed -i 's/luci-theme-argon-18.06/luci-theme-argon/g' package/luci-theme-argon/Ma
 git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 
 # luci-app-vssr及依赖
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+#git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
+#git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
