@@ -21,7 +21,7 @@ echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr' >>feeds.conf.defa
 echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr' >>feeds.conf.default
 
 # 修改内核为5.4
-sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile
+#sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # 软件中心istore
 svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
@@ -33,7 +33,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 sed -i 's/luci-theme-argon-18.06/luci-theme-argon/g' package/luci-theme-argon/Makefile
 
 # ikoolproxy去广告插件
-git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
+#git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 
 # luci-app-vssr及依赖
 #git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
