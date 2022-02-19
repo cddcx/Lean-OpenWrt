@@ -33,7 +33,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 sed -i 's/luci-theme-argon-18.06/luci-theme-argon/g' package/luci-theme-argon/Makefile
 
 # ikoolproxy去广告插件
-#git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
+git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 
 # luci-app-vssr及依赖
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
