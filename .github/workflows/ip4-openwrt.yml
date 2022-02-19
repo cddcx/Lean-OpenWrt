@@ -1,4 +1,4 @@
-name: openwrt
+name: openwrt-ip4
 
 on:
   repository_dispatch:
