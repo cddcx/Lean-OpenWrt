@@ -18,7 +18,7 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr' >>feeds.conf.default
 #vssr依赖
-echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr' >>feeds.conf.default
+echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr.git' >>feeds.conf.default
 
 # 修改内核为5.4
 #sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile
