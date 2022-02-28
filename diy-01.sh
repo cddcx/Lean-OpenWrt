@@ -21,7 +21,7 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 #echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr.git' >>feeds.conf.default
 
 # 修改内核为5.4
-#sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile
+sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # 软件中心istore
 svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
@@ -38,8 +38,8 @@ git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-ope
 rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 
 # ikoolproxy去广告插件
-#git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
-#rm -rf package/luci-app-ikoolproxy/README*
+git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
+rm -rf package/luci-app-ikoolproxy/README*
 
 # luci-app-vssr及依赖
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
