@@ -24,9 +24,9 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # 软件中心istore
-svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
-rm -rf package/luci-app-store/.svn
-sed -i 's/("iStore"), 31/("应用"), 61/g' package/luci-app-store/luasrc/controller/store.lua
+#svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
+#rm -rf package/luci-app-store/.svn
+#sed -i 's/("iStore"), 31/("应用"), 61/g' package/luci-app-store/luasrc/controller/store.lua
 
 # luci-theme-argon改版主题
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
