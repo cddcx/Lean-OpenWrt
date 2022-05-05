@@ -43,7 +43,7 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 #rm -rf package/luci-app-ikoolproxy/README*
 
 # luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/tree/luci/luci-app-passwall package/luci-app-passwall
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall/tree/luci/luci-app-passwall package/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 
 # luci-app-vssr及依赖
