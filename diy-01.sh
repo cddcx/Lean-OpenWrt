@@ -44,7 +44,7 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 
 # luci-app-passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 
 # luci-app-vssr及依赖
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
