@@ -15,7 +15,7 @@
 
 # 添加源
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+#echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr' >>feeds.conf.default
 #vssr依赖
 #echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr.git' >>feeds.conf.default
@@ -41,6 +41,9 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 # ikoolproxy去广告插件
 #git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 #rm -rf package/luci-app-ikoolproxy/README*
+
+# luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 
 # luci-app-vssr及依赖
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
