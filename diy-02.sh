@@ -11,6 +11,8 @@ sed -i 's/bootstrap/opentopd/' feeds/luci/collections/luci/Makefile
 
 # 整理
 rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/packages/net/adguardhome
+rm -rf feeds/packages/net/smartdns
 
 # 修改网络
 #sed -i 's/eth0/eth0 eth2 eth3/' package/base-files/files/etc/board.d/99-default_network
