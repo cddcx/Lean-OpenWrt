@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # 添加源
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr' >>feeds.conf.default
 #vssr依赖
@@ -42,8 +42,11 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 #git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 #rm -rf package/luci-app-ikoolproxy/README*
 
+# luci-app-vss
+git clone https://github.com/fw876/helloworld.git package/ssr
+
 # luci-app-passwall
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 
 # luci-app-vssr及依赖
