@@ -25,6 +25,7 @@ sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # 软件中心istore
 svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
+svn co https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
 rm -rf package/luci-app-store/.svn
 sed -i 's/luci-lib-ipkg/luci-base/g' package/luci-app-store/Makefile
 sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/luci-app-store/luasrc/controller/store.lua
