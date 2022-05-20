@@ -44,7 +44,7 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 #git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 #rm -rf package/luci-app-ikoolproxy/README*
 
-# luci-app-vss
+# luci-app-ssr
 git clone https://github.com/fw876/helloworld.git package/ssr
 
 # luci-app-passwall
