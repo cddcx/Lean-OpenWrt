@@ -18,6 +18,8 @@ sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile
 sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # 添加源
+sed -i "/helloworld/d" "feeds.conf.default"
+echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr' >>feeds.conf.default
@@ -45,7 +47,7 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 #rm -rf package/luci-app-ikoolproxy/README*
 
 # luci-app-ssr
-git clone https://github.com/fw876/helloworld.git package/ssr
+#git clone https://github.com/fw876/helloworld.git package/ssr
 
 # luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
