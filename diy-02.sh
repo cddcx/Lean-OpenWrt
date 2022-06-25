@@ -10,9 +10,13 @@ sed -i 's/root::0:0:99999:7:::/root:$1$SOP5eWTA$fJV8ty3QohO0chErhlxCm1:18775:0:9
 sed -i 's/bootstrap/opentopd/' feeds/luci/collections/luci/Makefile
 
 # 整理
-rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/luci-theme-argon
+rm -rf feeds/luci/applications/luci-app-serverchan
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/packages/net/smartdns
+rm -rf feeds/packages/net/mosdns
+rm -rf package/openwrt-passwall/v2ray-geodata
+rm -rf package/ssr/v2ray-geodata
 
 # 修改网络
 #sed -i 's/eth0/eth0 eth2 eth3/' package/base-files/files/etc/board.d/99-default_network
