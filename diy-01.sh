@@ -18,8 +18,8 @@
 #sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # 添加源
-echo 'src-git jerryk https://github.com/jerrykuku/openwrt-package' >>feeds.conf.default
-git clone https://github.com/fw876/helloworld.git package/ssr
+#echo 'src-git jerryk https://github.com/jerrykuku/openwrt-package' >>feeds.conf.default
+#git clone https://github.com/fw876/helloworld.git package/ssr
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #echo 'src-git vssr https://github.com/jerrykuku/luci-app-vssr' >>feeds.conf.default
@@ -34,9 +34,9 @@ sed -i 's/luci-lib-ipkg/luci-base/g' package/luci-app-store/Makefile
 sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/luci-app-store/luasrc/controller/store.lua
 
 # luci-theme-argon改版主题
-#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-#rm -rf package/luci-theme-argon/README* package/luci-theme-argon/Screenshots/
-#sed -i 's/luci-theme-argon-18.06/luci-theme-argon/g' package/luci-theme-argon/Makefile
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+rm -rf package/luci-theme-argon/README* package/luci-theme-argon/Screenshots/
+sed -i 's/luci-theme-argon-18.06/luci-theme-argon/g' package/luci-theme-argon/Makefile
 
 # luci-theme-opentopd主题
 git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd
@@ -47,7 +47,7 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 #rm -rf package/luci-app-ikoolproxy/README*
 
 # luci-app-ssr
-#git clone https://github.com/fw876/helloworld.git package/ssr
+git clone https://github.com/fw876/helloworld.git package/ssr
 
 # luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
@@ -56,5 +56,5 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-pass
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
 
 # luci-app-vssr及依赖
-#git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
-#git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
