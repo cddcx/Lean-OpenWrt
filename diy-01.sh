@@ -27,7 +27,8 @@
 #echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr.git' >>feeds.conf.default
 
 # 软件中心istore
-svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
+#svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
+svn co https://github.com/linkease/istore/trunk/luci package/istore
 svn co https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
 rm -rf package/luci-app-store/.svn
 sed -i 's/luci-lib-ipkg/luci-base/g' package/luci-app-store/Makefile
