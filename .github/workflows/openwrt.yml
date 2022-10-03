@@ -1,4 +1,4 @@
-name: openwrt
+name: openwrt-5.15
 
 on:
   workflow_dispatch:
