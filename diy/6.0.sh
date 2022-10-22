@@ -49,6 +49,9 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 #git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 #rm -rf package/luci-app-ikoolproxy/README*
 
+# luci-app-openclash
+git clone https://github.com/vernesong/OpenClash.git package/openclash
+
 # luci-app-ssr
 git clone https://github.com/fw876/helloworld.git package/ssr
 
