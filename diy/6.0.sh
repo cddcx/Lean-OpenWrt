@@ -49,9 +49,6 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 #git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 #rm -rf package/luci-app-ikoolproxy/README*
 
-# luci-app-openclash
-git clone https://github.com/vernesong/OpenClash.git package/openclash
-
 # luci-app-ssr
 git clone https://github.com/fw876/helloworld.git package/ssr
 
@@ -64,3 +61,7 @@ git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
 # luci-app-vssr及依赖
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+
+# luci-app-openclash
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+rm -rf package/luci-app-openclash/.svn
