@@ -58,7 +58,7 @@ git clone https://github.com/fw876/helloworld.git package/ssr
 
 # luci-app-passwall2
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
-git clone https://github.com/xiaorouji/openwrt-passwall2.git package
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 
 # luci-app-vssr及依赖
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
