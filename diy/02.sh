@@ -17,7 +17,7 @@ rm -rf feeds/luci/theme/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-serverchan
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/packages/net/smartdns
-rm -rf feeds/packages/net/mosdns
+#rm -rf feeds/packages/net/mosdns
 
 # 修改网络
 #sed -i 's/eth0/eth0 eth2 eth3/' package/base-files/files/etc/board.d/99-default_network
