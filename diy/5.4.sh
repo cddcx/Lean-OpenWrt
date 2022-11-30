@@ -57,7 +57,7 @@ rm -rf package/luci-theme-opentopd/doc/
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 #git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
 
-# luci-app-passwal2
+# luci-app-passwall2
 #svn co https://github.com/xiaorouji/openwrt-passwall/tree/luci/luci-app-passwall openwrt-passwall/luci-app-passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 
