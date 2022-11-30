@@ -43,7 +43,8 @@ sed -i 's/luci-theme-argon-18.06/luci-theme-argon/g' package/luci-theme-argon/Ma
 
 # luci-theme-opentopd主题
 git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd
-rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
+rm -rf package/luci-theme-opentopd/README*
+rm -rf package/luci-theme-opentopd/doc/
 
 # ikoolproxy去广告插件
 git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
