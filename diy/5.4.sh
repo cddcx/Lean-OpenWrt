@@ -66,5 +66,5 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 rm -rf package/luci-app-openclash/.svn
 
-# luci-app-clash
-git clone https://github.com/frainzy1477/luci-app-clash.git package/luci-app-clash
+# luci-app-v2ray
+git clone https://github.com/kuoruan/openwrt-v2ray.git package/v2ray-core
