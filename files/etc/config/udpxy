@@ -7,3 +7,4 @@ config udpxy
 	option bind '192.168.1.1'
 	option port '4100'
 	option source 'eth1.43'
+	option max_clients '10'
