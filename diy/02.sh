@@ -4,21 +4,7 @@
 #sed -i 's/192.168.1.1/192.168.5.1/g' openwrt/package/base-files/files/bin/config_generate
 
 #2 修改密码
-sed -i 's/root::0:0:99999:7:::/root:$1$SOP5eWTA$fJV8ty3QohO0chErhlxCm1:18775:0:99999:7:::/g' package/base-files/files/etc/shadow
-
-#3 修改默认主题
-#sed -i 's/bootstrap/opentopd/' feeds/luci/collections/luci/Makefile
-sed -i '/set luci.main.mediaurlbase*/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
-sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci/Makefile
-sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci-nginx/Makefile
-sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci-ssl-nginx/Makefile
-
-# 整理
-rm -rf feeds/luci/theme/luci-theme-argon
-rm -rf feeds/luci/applications/luci-app-serverchan
-rm -rf feeds/packages/net/adguardhome
-rm -rf feeds/packages/net/smartdns
-#rm -rf feeds/packages/net/mosdns
+sed -i 's/5mjCdAB1$Uk1sNbwoqfHxUmzRIeuZK1:0/SOP5eWTA$fJV8ty3QohO0chErhlxCm1:18775/g' package/base-files/files/etc/shadow
 
 # 修改网络
 #sed -i 's/eth0/eth0 eth2 eth3/' package/base-files/files/etc/board.d/99-default_network
