@@ -27,14 +27,12 @@
 #vssr依赖
 #echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr.git' >>feeds.conf.default
 
-# 软件中心istore
-#svn co https://github.com/linkease/istore/trunk/luci package/istore
-#svn co https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
-#rm -rf package/istore/.svn
-git clone https://github.com/linkease/istore.git package/istore
-git clone https://github.com/linkease/istore-ui.git package/istore-ui
-sed -i 's/luci-lib-ipkg/luci-base/g' package/istore/luci/luci-app-store/Makefile
-sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/istore/luci/luci-app-store/luasrc/controller/store.lua
+# istore
+echo 'src-git store https://github.com/linkease/istore.git;main' >>feeds.conf.default
+#git clone https://github.com/linkease/istore.git package/istore
+#git clone https://github.com/linkease/istore-ui.git package/istore-ui
+#sed -i 's/luci-lib-ipkg/luci-base/g' package/istore/luci/luci-app-store/Makefile
+#sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/istore/luci/luci-app-store/luasrc/controller/store.lua
 
 # luci-theme-argon改版主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
