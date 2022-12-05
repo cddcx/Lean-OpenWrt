@@ -27,8 +27,11 @@
 #vssr依赖
 #echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr.git' >>feeds.conf.default
 
+#酷友社开发的Openwrt插件：DDNSTO远程穿透、易有云存储端、iStore、QuickStart便捷首页
+svn co https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/linkease package/linkease
+
 # istore
-echo 'src-git store https://github.com/linkease/istore.git;main' >>feeds.conf.default
+#echo 'src-git store https://github.com/linkease/istore.git;main' >>feeds.conf.default
 #git clone https://github.com/linkease/istore.git package/istore
 #git clone https://github.com/linkease/istore-ui.git package/istore-ui
 #sed -i 's/luci-lib-ipkg/luci-base/g' package/istore/luci/luci-app-store/Makefile
