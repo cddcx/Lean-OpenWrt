@@ -29,6 +29,7 @@
 
 #酷友社开发的Openwrt插件：DDNSTO远程穿透、易有云存储端、iStore、QuickStart便捷首页
 svn co https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/linkease package/linkease
+rm -rf package/openwrt-packages/linkease/preview
 
 # istore
 #echo 'src-git store https://github.com/linkease/istore.git;main' >>feeds.conf.default
