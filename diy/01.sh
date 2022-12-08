@@ -28,11 +28,11 @@
 #echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr.git' >>feeds.conf.default
 
 #酷友社开发的Openwrt插件：DDNSTO远程穿透、易有云存储端、iStore、QuickStart便捷首页
-#svn co https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/linkease package/linkease
-#rm -rf package/openwrt-packages/linkease/preview
+svn co https://github.com/xiangfeidexiaohuo/openwrt-packages/trunk/linkease package/linkease
+rm -rf package/openwrt-packages/linkease/preview
 
 #设置向导
-git clone https://github.com/sirpdboy/luci-app-wizard package/luci-app-wizard
+#git clone https://github.com/sirpdboy/luci-app-wizard package/luci-app-wizard
 
 # istore
 #echo 'src-git store https://github.com/linkease/istore.git;main' >>feeds.conf.default
