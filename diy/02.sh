@@ -13,9 +13,9 @@ sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luc
 sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci-nginx/Makefile
 sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci-ssl-nginx/Makefile
 
-修改iStore
-sed -i 's/luci-lib-ipkg/luci-base/g' package/linkease/istore/luci/luci-app-store/Makefile
-sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/linkease/istore/luci/luci-app-store/luasrc/controller/store.lua
+#修改iStore
+#sed -i 's/luci-lib-ipkg/luci-base/g' package/linkease/istore/luci/luci-app-store/Makefile
+#sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/linkease/istore/luci/luci-app-store/luasrc/controller/store.lua
 
 # 整理
 rm -rf feeds/luci/theme/luci-theme-argon
