@@ -35,10 +35,10 @@ echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >
 #git clone https://github.com/sirpdboy/luci-app-wizard package/luci-app-wizard
 
 # istore
-#git clone https://github.com/linkease/istore.git package/istore
-#git clone https://github.com/linkease/istore-ui.git package/istore-ui
-#sed -i 's/luci-lib-ipkg/luci-base/g' package/istore/luci/luci-app-store/Makefile
-#sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/istore/luci/luci-app-store/luasrc/controller/store.lua
+git clone https://github.com/linkease/istore.git package/istore
+git clone https://github.com/linkease/istore-ui.git package/istore-ui
+sed -i 's/luci-lib-ipkg/luci-base/g' package/istore/luci/luci-app-store/Makefile
+sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/istore/luci/luci-app-store/luasrc/controller/store.lua
 
 # luci-theme-argon改版主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
