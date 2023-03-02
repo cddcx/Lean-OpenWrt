@@ -12,7 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-sed -i 's@.src-git packages*@#&@g' feeds.conf.default
+sed -i 's@.*src-git packages*@#&@g' feeds.conf.default
 
 # 修改内核
 #sed -i 's/PATCHVER:=5.15/PATCHVER:=5.19/g' target/linux/x86/Makefile
