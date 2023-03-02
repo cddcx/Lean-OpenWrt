@@ -12,7 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-sed -i 's@.*src-git packages*@#&@g' feeds.conf.default
+#sed -i 's@.*src-git packages*@#&@g' feeds.conf.default
 
 # 修改内核
 #sed -i 's/PATCHVER:=5.15/PATCHVER:=5.19/g' target/linux/x86/Makefile
@@ -20,7 +20,7 @@ sed -i 's@.*src-git packages*@#&@g' feeds.conf.default
 #sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # 添加源
-echo 'src-git packages https://github.com/kiddin9/openwrt-packages.git;master' >> feeds.conf.default
+#echo 'src-git packages https://github.com/kiddin9/openwrt-packages.git;master' >> feeds.conf.default
 #git clone https://github.com/fw876/helloworld.git package/ssr
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
@@ -29,21 +29,21 @@ echo 'src-git packages https://github.com/kiddin9/openwrt-packages.git;master' >
 #echo 'src-git maxminddb https://github.com/jerrykuku/lua-maxminddbr.git' >>feeds.conf.default
 
 #酷友社开发的Openwrt插件：DDNSTO远程穿透、易有云存储端、iStore、QuickStart便捷首页
-#echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
-#echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
+echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
+echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
 
 #设置向导
 #git clone https://github.com/sirpdboy/luci-app-wizard package/luci-app-wizard
 
 # istore
-#git clone https://github.com/linkease/istore.git package/istore
-#git clone https://github.com/linkease/istore-ui.git package/istore-ui
-#sed -i 's/luci-lib-ipkg/luci-base/g' package/istore/luci/luci-app-store/Makefile
-#sed -i 's/("iStore"), 31/("应用商店"), 61/g' package/istore/luci/luci-app-store/luasrc/controller/store.lua
+git clone https://github.com/linkease/istore.git package/istore
+git clone https://github.com/linkease/istore-ui.git package/istore-ui
+sed -i 's/luci-lib-ipkg/luci-base/g' package/istore/luci/luci-app-store/Makefile
+#ed -i 's/("iStore"), 31/("应用商店"), 61/g' package/istore/luci/luci-app-store/luasrc/controller/store.lua
 
 # luci-theme-argon改版主题
-#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-#rm -rf package/luci-theme-argon/README* package/luci-theme-argon/Screenshots/
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+rm -rf package/luci-theme-argon/README* package/luci-theme-argon/Screenshots/
 #sed -i 's/luci-theme-argon-18.06/luci-theme-argon/g' package/luci-theme-argon/Makefile
 
 # luci-theme-opentopd主题
@@ -69,5 +69,5 @@ rm -rf package/luci-theme-opentopd/README* package/luci-theme-opentopd/doc/
 #git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
 # luci-app-openclash
-#svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-#rm -rf package/luci-app-openclash/.svn
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+rm -rf package/luci-app-openclash/.svn
