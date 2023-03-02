@@ -12,6 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed -i 's@.src-git packages*@#&@g' feeds.conf.default
 
 # 修改内核
 #sed -i 's/PATCHVER:=5.15/PATCHVER:=5.19/g' target/linux/x86/Makefile
@@ -19,7 +20,7 @@
 #sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
 # 添加源
-#echo 'src-git jerryk https://github.com/jerrykuku/openwrt-package' >>feeds.conf.default
+echo 'src-git packages https://github.com/kiddin9/openwrt-packages.git;master' >>feeds.conf.default
 #git clone https://github.com/fw876/helloworld.git package/ssr
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
