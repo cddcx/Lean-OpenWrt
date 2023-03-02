@@ -14,14 +14,14 @@ sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luc
 sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci-ssl-nginx/Makefile
 
 # 修改include/target.mk
-sed -i "s/luci-app-ddns luci-app-upnp luci-app-autoreboot/luci-app-upnp/" include/target.mk
+sed -i "s/ddns-scripts_aliyun ddns-scripts_dnspod luci-app-ddns luci-app-upnp luci-app-autoreboot/luci-app-upnp/" include/target.mk
 sed -i "s/luci-app-arpbind luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-vlmcsd/luci-app-firewall/" include/target.mk
 sed -i "s/luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol/luci-app-opkg/" include/target.mk
 
 
 # 修改target/linux/x86/Makefile
-sed -i "sluci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-diskman/luci-app-istorex/" target/linux/x86/Makefile
-sed -i "luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-ttyd/luci-app-openclash/" target/linux/x86/Makefile
+sed -i "s/luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-diskman/luci-app-istorex/" target/linux/x86/Makefile
+sed -i "s/luci-app-unblockmusic luci-app-zerotier luci-app-xlnetacc ddns-scripts_aliyun ddns-scripts_dnspod ca-bundle luci-app-wireguard luci-app-ttyd/luci-app-openclash/" target/linux/x86/Makefised -i "s/luci-app-adbyby-plus luci-app-ipsec-vpnd luci-proto-bonding luci-app-diskman/luci-app-istorex/" target/linux/x86/Makefile
 
 #修改iStore
 #sed -i 's/luci-lib-ipkg/luci-base/g' package/linkease/istore/luci/luci-app-store/Makefile
