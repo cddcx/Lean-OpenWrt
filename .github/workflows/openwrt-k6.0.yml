@@ -1,4 +1,4 @@
-name: openwrt-6.0
+name: openwrt-6.1
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: dif.config
-  DIY_P1_SH: diy/6.0.sh
+  DIY_P1_SH: diy/6.1.sh
   DIY_P2_SH: diy/02.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
