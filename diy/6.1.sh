@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # 修改内核
-sed -i 's/PATCHVER:=5.15/PATCHVER:=6.0/g' target/linux/x86/Makefile
+sed -i 's/PATCHVER:=5.15/PATCHVER:=6.1/g' target/linux/x86/Makefile
 #sed -i 's/PATCHVER:=5.15/PATCHVER:=5.10/g' target/linux/x86/Makefile
 #sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile
 
@@ -65,5 +65,6 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
 # luci-app-openclash
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-rm -rf package/luci-app-openclash/.svn
+svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+#svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+#rm -rf package/luci-app-openclash/.svn
